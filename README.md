@@ -13,23 +13,21 @@ In this project, I used four neural networks: (1.) two DenseNet-BC networks trai
 
 ## Experimental Results
 To evaluate the performance of the OOD detection methods used in our project a range of metrics, including FPR at 95% TPR, detection error, AUROC, AUPR-In, and AUPR-Out were used. The definition of each metric can be found in the paper. The experimental results are shown as follows.
-
-![alt text](https://drive.google.com/uc?id=1pBQbR1xYrz7bAnBlY8GdzKDMfRoDXUtV)
+<div>
+    <img src="https://drive.google.com/uc?id=1kNP2ZFQTzU-edRO3yXiLOCNB5JUIywtW" style="width: 46%; float: left;" />
+    <img src="https://drive.google.com/uc?id=1aoQobTu0wJy_tWFBMpnFE-R8nZbb9klE" style="width: 50%; float: right;" /> 
+ </div>
 
 Below is a detailed visualization of the OOD detection performance results using the five methods across the two models.
 
-![alt text](https://drive.google.com/uc?id=1XdWQtQyp3feW_snwUxiFy7t_6oxZDIKp)
-![alt text](https://drive.google.com/uc?id=1QJRd69ef4UsNf1euPO0yt8ixhxJoCyzQ) 
+![alt text](https://drive.google.com/uc?id=1LJQ8xw1JC8VAW6ZdfnE5hgVspA8y2YTw)
 
 Tables 5.2 and 5.3 below show the distribution of scores for the five OOD detection methods on ID datasets
 CIFAR-10 and CIFAR-100, versus OOD dataset TinyImageNet(resize), using the two models. The goal is to
 understand how well the five methods can distinguish ID and OOD samples. Here we use TinyImageNet(resize)
 to demonstrate how the different methods behave; however, similar results can be observed for the other
-three OOD datasets.
-<div>
-    <img src="https://drive.google.com/uc?id=1oZ3X9wYDBn2BPpCtp7Eifz2CrXyw_F2m" style="width: 46%; float: left;" />
-    <img src="https://drive.google.com/uc?id=1L93nvK2e7nrTQKX7nnDbystBVbw1aoHQ" style="width: 46%; float: right;" />
- </div>
+three OOD datasets. 
+
 
 ## Running the code
 
