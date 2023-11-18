@@ -22,6 +22,8 @@ Below is a detailed visualization of the OOD detection performance results using
 
 ![alt text](https://drive.google.com/uc?id=1LJQ8xw1JC8VAW6ZdfnE5hgVspA8y2YTw)
 
+![alt text](https://drive.google.com/uc?id=1gOc6LJy2uAPBS3LAA0C9mP6J_B_EMgqZ) 
+
 Tables 5.2 and 5.3 below show the distribution of scores for the five OOD detection methods on ID datasets
 CIFAR-10 and CIFAR-100, versus OOD dataset TinyImageNet(resize), using the two models. The goal is to
 understand how well the five methods can distinguish ID and OOD samples. Here we use TinyImageNet(resize)
