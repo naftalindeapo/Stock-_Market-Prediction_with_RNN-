@@ -1,16 +1,23 @@
 # Stock Market Prediction with_RNN
-This is a simple unified framework for detecting out-of-distribution (OOD) images in neural networks from my [Out-of-Distribution Detection](https://drive.google.com/file/d/1iYIQB629sgECxraShk7qWKXwe9dYhi2e/view?usp=sharing)  research project implemented in [PyThorch](https://pytorch.org). The project explores OOD detection using multiple
-techniques, including [MaxSoftmax](https://arxiv.org/abs/1610.02136)), [OpenMax](https://arxiv.org/abs/1511.06233), [Mahalanobis distance](https://arxiv.org/abs/1807.03888), [energy-based methods](https://arxiv.org/abs/2010.03759), and [ODIN](https://arxiv.org/abs/1706.02690), leveraging the pre-trained image classification models [WRN-28-10](https://arxiv.org/abs/1605.07146) and [Dense-BC](https://arxiv.org/abs/1608.06993). Below is an illustration of our OOD detection framework.
+In this project, we implement three such models: Recurrent Neural Networks (RNN), Long
+Short-Term Memory (LSTM) and Gated Recurrent Units (GRU) to predict daily closing prices of AEX
+index listed on Euronext Amsterdam. These models were trained using a stock dataset composed of
+daily closing prices of 8 indices trading on different stock markets, including AEX index. Three accuracy
+tests: MAE, RMSE and MAPE were used to measure the performance of each model. The results have
+shown that GRU performed better than RNN and LSTM in terms of predictive accuracy.
 
-![alt text](https://drive.google.com/uc?id=1tcnNRv9HBxI3dsoNXcGTTEckM6W2vLjv)
+This is a simple unified framework for predicting stock prices using machine learning models from my [MSc Mathematical Sciences](https://drive.google.com/file/d/1PD7tn2eRz3VI0Xq71WBdmGFnBG7i5DLP/view?usp=sharing)  research project implemented in [TensorFlow](https://www.tensorflow.org). The project uses three deep neural network models: RNN, LSTM, and GRU to forecast stock time series data composed of closing prices of 8 indices of stocks listed on different stock markets. The selected indices are AEX index, DAXINDX, CAC40,
+FTSE100, HNGKNGI, JAPDOWA, NASCOMP, and ATHEX Composite. Below is an illustration of how machine learning can be used in stock market prediction.
 
-## Pre-trained Models
-In this project, I used four neural networks: (1.) two DenseNet-BC networks trained on Cifar-10 and Cifar-100 respectively, and (2.) Two Wide ResNet networks trained on Cifar-10 and Cifar-100. The PyTorch implementation of the DenseNet-BC and Wide ResNet are provided by [Andreas Veit](https://github.com/andreasveit/densenet-pytorch), and [Sergey Zagoruyko](https://github.com/szagoruyko/wide-residual-networks), respectively. The in-distribution (ID) test error rates of the two models are given in the table below.
-|Architecure     | Cifar-10      | Cifar-100 |
-| -------------  |:-------------:| ---------:|
-| Dense-BC       | 5.16          | 24.06     |
-| WRN-28-10      | 5.93          | 25.10     |
+![alt text](https://drive.google.com/uc?id=1Pws9qssKrTc_PXQ7F_Q6NSPZjVJZDrVq) 
 
+## RNN architectures
+In this project, the following architectures for RNN, LSTM and GRU were used:
+<div>
+    <img src="https://drive.google.com/uc?id=1VbSAtIs5csGr6Sbj0a5mkyYzLnAJv2Y8" style="width: 46%; float: left;" />
+    <img src="https://drive.google.com/uc?id=19HJkyy_Ki7zNj87PIliDnrMvjPsBlmar" style="width: 50%; float: right;" /> 
+ </div>
+ 
 ## Experimental Results
 To evaluate the performance of the OOD detection methods used in our project a range of metrics, including FPR at 95% TPR, detection error, AUROC, AUPR-In, and AUPR-Out were used. The definition of each metric can be found in the paper. The experimental results are shown as follows.
 <div>
