@@ -45,7 +45,7 @@ After prediction was done on the test set, both the predicted and test target va
 The historic stock prices dataset used in this project can be downloaded [here](https://drive.google.com/file/d/1R0IoeRv7bAw7rR4qsEDfn0rOyl7KpQp3/view?usp=sharing).
 
 ### License
-Refer to the [LICENSE](https://github.com/naftalindeapo/OOD-Detection/blob/main/LICENSE).
+Refer to the [LICENSE](https://github.com/naftalindeapo/Stock_Market-Prediction_with_RNN/blob/master/LICENSE).
 
 
 
